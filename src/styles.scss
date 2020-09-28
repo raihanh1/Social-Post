@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #f3f1f7;
+  font-family: "Dosis";
+}
+
+h1 {
+  text-align: center;
+  font-family: "Homemade Apple";
+  color: rgb(3, 169, 244);
+}
+
+.newThought {
+  width: 100%;
+  padding: 10px;
+  font-family: "Dosis";
+  font-weight: 800;
+  background-color: white;
+}
+
+.container {
+  margin-top: 15px;
+  padding: 20px 40px;
+  border: 2px solid black;
+  background-color: white;
+}

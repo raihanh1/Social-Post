@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My Thoughts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Homemade+Apple|Dosis"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>My Thoughts</h1>
+    <button class="newThought" (click)="showForm()">New Thought</button>
+    <div class="container">
+      <app-post
+        *ngFor="let post of posts; index as i"
+        [post]="post"
+        (deleted)="handleDelete(i)"
+      ></app-post>
+    </div>
+
+    <app-post-form
+      (submitted)="handleSubmit($event)"
+      [hidden]="!show"
+    ></app-post-form>
+  </body>
+</html>

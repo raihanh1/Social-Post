@@ -1,0 +1,14 @@
+<div class="overlay"></div>
+<div class="formBackground">
+  <form #postForm="ngForm" (ngSubmit)="submitPostForm(postForm)">
+    <label for="title">Title</label>
+    <br />
+    <input type="text" name="title" id="title" ngModel />
+    <br />
+    <label for="thought">Thought</label>
+    <br />
+    <input type="text" name="thought" id="thought" ngModel />
+    <br />
+    <button>Add Post</button>
+  </form>
+</div>
